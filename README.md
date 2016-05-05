@@ -1,2 +1,2 @@
 # Sensi-ATM-web
-Demo of ATM authentication with sensipass app
+Web demo of ATM authentication with sensipass app
