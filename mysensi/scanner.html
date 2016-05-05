@@ -1,0 +1,62 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"/>
+<style>
+	#countDown {
+		position: relative;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+		
+		<div class="box">
+			<a href="index.html"><img style=" z-index:2;" src="images/scanner_screen.png" alt=""></a>
+			<img  style="width: 250px; height: 250px; position:relative; margin-left: 270px; margin-top:-425px; z-index:1;" src="http://qrgen.mybluemix.net/" />
+		<div id='countDown' style="margin-left: 550px; margin-top:-550px; z-index:-1;"></div>
+		</div>
+	</div>
+
+</body> <!-- prze Pani !!! a Nikodem nie zamknal ciala -->		
+
+
+<script type='text/javascript'>
+	function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        seconds = parseInt(timer % 10, 10);
+
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+	document.getElementById("countDown").innerHTML = '<h1>' + seconds + '</h1>';
+
+        if (--timer < 0) {
+            timer = duration;
+            // location.reload();
+            window.location = './capture.html';
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var sixtySeconds = 10,
+        display = document.getElementById('countDown');
+    startTimer(sixtySeconds, display);
+};
+</script>
+
+
+
+</html>
+
+<!--
+<div id='qr_box'>
+		<img style="width: 400px; height: 400px; margin-left:8px; margin-top: 5px; position:relative background-color: #FFFFFF" src="http://qrgen.mybluemix.net/" />
+	</div>
+	
+	-->

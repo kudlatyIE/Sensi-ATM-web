@@ -1,0 +1,67 @@
+<html>
+	<link rel="stylesheet" href="style.css" />
+    <head>
+
+        <script type="text/javascript" src="qrcode/js/lib/jquery-1.7.2.min.js"></script>
+
+        <script type="text/javascript">
+            var username;
+        </script>
+
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/grid.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/version.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/detector.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/formatinf.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/errorlevel.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/bitmat.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/datablock.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/bmparser.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/datamask.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/rsdecoder.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/gf256poly.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/gf256.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/decoder.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/QRCode.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/findpat.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/alignpat.js"></script>
+        <script type="text/javascript" src="qrcode/js/lib/jsqrcode/databr.js"></script>
+
+        <script type="text/javascript" src="qrcode/js/qr.js"></script>
+        <script type="text/javascript" src="qrcode/js/camera.js"></script>
+        <script type="text/javascript" src="qrcode/js/init.js"></script>
+
+
+
+    </head>
+    
+    
+    <body>
+	
+	<div class="container">
+		<div class="box">
+		
+			<a href="index.html"><img style=" position:relative; z-index:2;" src="images/capture_screen.png" alt=""></a>
+			
+			<canvas id="qr-canvas" width="450" height="450" style="width: 450px; height: 450px; position:relative; margin-left: 180px; margin-top:-485px; z-index:0;" display:none"></canvas>
+			
+			<video  id="camsource" autoplay style= "transform: scale(-1, 1); width: 450px;  position:relative; margin-left: 180px; margin-top:-485px; z-index:1;" >No Web Cam Attached</video>
+			
+
+			<!--
+			<video  id="camsource" autoplay style= "transform: scale(-1, 1); width: 450px; height: 420px; position:relative; margin-left: 180px; margin-top:-523px; z-index:2;" >No Web Cam Attached</video>
+			<canvas id="qr-canvas" width="250" height="250" style="width: 250px; height: 250px; position:relative; margin-left: 270px; margin-top:-425px; z-index:1;" display:none"></canvas>
+			-->
+<!-- QR scan result text 			
+			<h3 id="qr-value"></h3>
+			<h3 style="position:absolute; text-align: center; margin-left: 23%; margin-top: 13%" id="qr-code-value"></h3>
+ -->			
+		</div>
+	</div>
+<!--    ok/fail animations 
+
+        <img id="xGif" src="https://media.giphy.com/media/86VaJS7Y6tEzK/giphy.gif" style="display:none;position:absolute; margin-left: 16.5%; margin-top: 15%"></img>
+        <img id="tickGif" src="https://lawtrades.com/static/larry/img/checkmark.gif" style="display:none;position:absolute; margin-left: 16.5%; margin-top: 15%"></img>
+  
+--> 
+    </body>
+</html>

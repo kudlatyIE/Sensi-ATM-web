@@ -1,0 +1,57 @@
+
+.row:after {
+   content: "";
+   clear: both;
+   display: table;
+}
+.left {
+   float: left;
+   width: 50%;
+}
+}.right {
+   float: right;
+   width: 50%;
+}
+/* ------------ inny ------------------------- */
+.Row
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column
+{
+    display: table-cell;
+    background-color: red; /*Optional*/
+}
+/* ---------- inny --------------------------- */
+.mainDIV{
+    position:relative;
+    background:yellow;
+    width:100%;
+    min-width:315px;
+}
+.leftDIV{
+    position:relative;
+    top:0px;
+    left:0px;
+    height:50px;
+    width:100px;
+    background:red;
+}
+.middleDIV{
+	position:relative;
+    height:50px;
+    width:100px;
+    background:blue;
+    margin:0px auto;
+}
+.rightDIV{
+    position:relative;
+    top:0px;
+    right:0px;
+    height:50px;
+    width:100px;
+    background:green;
+}
